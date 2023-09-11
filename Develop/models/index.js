@@ -14,7 +14,7 @@ Category.hasMany(Product, {
   foreignKey: 'category_id',
   onDelete: 'CASCADE'
 });
-// Products belongToMany Tags (through ProductTag)
+// Products belongToMany Tags (through ProductTag) https://sequelize.org/api/v6/class/src/associations/belongs-to-many.js~belongstomany
 Product.belongsToMany(Tag, {
   through: ProductTag
 });
